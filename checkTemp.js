@@ -10,7 +10,7 @@ function checkTemp()
     {
         Vas = 1
     }
-    else is (value != 20 && 40)
+    else if (value != 20 && 40)
     {
         Vas = 0
     }
