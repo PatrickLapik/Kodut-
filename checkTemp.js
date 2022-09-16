@@ -14,4 +14,6 @@ function checkTemp()
     {
         Vas = 0
     }
+
+    return Vas;
 }
