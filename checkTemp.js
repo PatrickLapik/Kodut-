@@ -1,6 +1,5 @@
-function checkTemp()
+function checkTemp(value)
 {
-    let value;
 
     if (value < 21)
     {
