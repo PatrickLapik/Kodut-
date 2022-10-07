@@ -1,4 +1,4 @@
-function order(orderDetails){
+function orderSummary(orderDetails){
   var orderDetails
 
   var koguSumma = 0
