@@ -1,15 +1,18 @@
 function orderSummary(orderDetails){
-  var orderDetails
 
-  var koguSumma = 0
+    var koguSumma = 0
+  
+    for (let i = 0, row; row = orderDetails.rows[i]; i++){
+      let tooteKM = row.price * row.vat
+      let tooteSummaKM = tooteKM + row.price
+      koguSumma += tooteSummaKM * row.amount
+      console.log(row.name)
+      console.log(tooteKM)
+      console.log(tooteSummaKM)
+      console.log(row.amount)
+      
+    }
 
-  for (var i = 0, row; row = orderDetails.rows[i]; i++){
-    var summaKM = row.price * row.vat + row.price
-    koguSumma += summaKM * row.amount;
-    console.log(row.name)
-    console.log(summaKM)
-    console.log(row.amount)
+    console.log(koguSumma)
+  
   }
-  console.log(koguSumma)
-
-}
